@@ -42,3 +42,6 @@ function wp_adv_nav_menu_li_class($classes, $items, $args, $depth){
     }
     return $classes;
 }
+
+add_filter('nav_menu_css_classes', 'wp-adv_nav_menu_li_class', 10, 4);
+
